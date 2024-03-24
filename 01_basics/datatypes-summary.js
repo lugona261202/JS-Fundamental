@@ -41,3 +41,30 @@ const  myfunction = function(){
 
 
 console.log(typeof myObj)
+
+// ******* memory *********
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYouTubeName = "harshitpantdotcom"
+let anothername= myYouTubeName
+anothername= "harshitonly"
+
+console.log(myYouTubeName)
+console.log(anothername)
+// in this case copy is created and worked upon
+// both will be different original will remain unaffected
+
+let userOne ={
+  email:"user@google.com",
+  upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email= "harshit.com"
+
+console.log(userOne)
+console.log(userTwo)
+// in this case they are passed by reference
+// so change in one will be reflected on both
