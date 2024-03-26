@@ -1,4 +1,4 @@
-let score = "33abc"
+let score = undefined
 
 console.log(typeof score)
 console.log(typeof(score))
@@ -13,12 +13,14 @@ console.log(valueInNumber)
 // null =>0
 //undefined=>NaN
 
-let isLoggedIn=1
+
+let isLoggedIn=" "
 let booleanIsLoggedIn = Boolean(isLoggedIn)
 console.log(booleanIsLoggedIn)
 
 //1=>true; 0=>false;
 //""=>false
+//" "=>true
 //"hitesh"=>true
 
 let someNumber =33
