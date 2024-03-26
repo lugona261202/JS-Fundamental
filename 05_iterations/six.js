@@ -1,4 +1,4 @@
-/*const coding = ["js","ruby","java","python","cpp"]
+const coding = ["js","ruby","java","python","cpp"]
 
 const values = coding.forEach((item)=>{
     console.log(item)
@@ -23,7 +23,7 @@ console.log(newNums1)
 // this method is when u want to use for each only
 // then we have to externally filter it
 
-*/
+
 //filter method can be used in more ways
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
