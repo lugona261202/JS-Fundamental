@@ -21,7 +21,7 @@ console.log(regularUser.fullname.userfullname.firstname)
 // sometimes before fullname . we put a ?
 // this is like a conditional statement
 // it checks if further nesting exist, if not then it directly calls username
-/*
+
 const obj1 ={1: "a", 2:"b"}
 const obj2 ={3: "a", 4:"b"}
 const obj4 ={5: "a", 6:"b"}
@@ -68,7 +68,7 @@ console.log(Object.entries(tinderUser))
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 // checks if that key or property exists or not 
 // return type is boolean
-*/
+
 const course = {
     coursename : "js in hindi",
     price : "999",
