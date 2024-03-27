@@ -7,7 +7,8 @@ const myTotal = myNums.reduce(function(acc,currval) {
 // here normal function is used not arrow function hence call back syntax is different
 // here initial value has to be mentioned before last parenthesis preceeded by a ,
 // rest syntax can be different depending it is arrow implicit or explicit
-const myTotal = myNums.reduce(()=>acc + cur ,0)
+
+const myTotal = myNums.reduce((acc, cur)=>acc + cur ,0)
 
 console.log(myTotal)
 
@@ -34,6 +35,7 @@ const shoppingCart = [
 const priceToPay = shoppingCart.reduce((acc,item)=>acc+ item.price ,0)
 
 console.log(priceToPay)
+
 
 
 
