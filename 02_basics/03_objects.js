@@ -29,7 +29,7 @@ const JsUser ={
  // but key dataype would most probably be changed to string
 
  JsUser.email = "hitesh@chatgpt.com"
-//Object.freeze(JsUser)
+Object.freeze(JsUser)
 // this object is freezed 
 // no error will be thrown but value won't be updated
 JsUser.email="hitesh@microsoft.com"
