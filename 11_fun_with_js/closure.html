@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+       function init(){
+        let  name = "Mozilla"; 
+            console.log(name);
+        }
+        displayName()
+        }
+    init()
+
+    function outer(){
+        let username ="hitesh"
+        function inner(){
+            let secret ="my123"
+            console.log("inner",username)
+        }
+        function innerTwo(){
+            console.log("innerTwo",username)
+            console.log(secret)
+        }
+        inner()
+        innerTwo()
+        //two inner functions can't share each others variable
+    }
+    outer()
+    console.log("too outer",username)
+    // username cannot be accessed outside function scope
+    // but innerfunction can still access variable of outer function
+
+    function makeFunc(){
+        const name = "Mozilla";
+        function displayName(){
+            console.log(name)
+        }
+        return displayName
+    }
+    const myFunc = makeFunc()
+</script>
+<script>
+    document.getElementById("orange").onclick = function(){
+        document.body.style.backgroundColor = 'orange'
+    }
+    document.getElementById("green").onclick = function(){
+        document.body.style.backgroundColor = 'green'
+    }
+    function clickHandler(color){
+        document.body.style.backgroundColor = `${color}`
+    }
+    document.getElementById('orange').onlick = clickHandler( "orange")
+    // this automatically changes color to orange
+    // so we need a  seperate function in clickhandler that changes the color
+function clickHandler(color){
+    return function (){
+        document.body.style.backgroundColor = `${color}`
+    }
+}
+
+//now if there wasn't concept of closure
+//inside function would not have been able to access color of outer function
+</script>
+</html>
